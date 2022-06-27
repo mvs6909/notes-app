@@ -1,4 +1,8 @@
 //1. Create a new React app.
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
 //2. Create a App.jsx component.
 //3. Create a Header.jsx component that renders a <header> element
 //to show the Keeper App name in an <h1>.
@@ -10,3 +14,8 @@
 //https://l1pp6.csb.app/
 
 //HINT: You will need to study the classes in teh styles.css file to appy styling.
+
+ReactDOM.render(
+    <App />,
+    document.getElementById("root")
+);
