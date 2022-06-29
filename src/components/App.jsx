@@ -17,7 +17,11 @@ function createNote(note){
 function App(){
     return (<div>
         <Header />
-        {notesData.map(createNote)}
+        {notesData.map( note => <Note 
+                        title={note.title}
+                        content = {note.content}
+                        />
+                        )}
         <Footer />
     </div>)
 }
